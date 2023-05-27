@@ -17,13 +17,29 @@ public class Aluno extends Pessoa{
     }
     
     ArrayList<Cadeiras> cadeiras = new ArrayList<Cadeiras>();
+    ArrayList<Notas> notas = new ArrayList<Notas>();
+    
 
     public ArrayList<Cadeiras> getCadeiras() {
         return cadeiras;
     }
-    
-    public void adicionarCadeira(){
-        
+
+    public String getNome() {
+        return nome;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+    
+    
     
 }

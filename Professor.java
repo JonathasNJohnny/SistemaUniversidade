@@ -5,6 +5,7 @@
 package escola;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -12,18 +13,49 @@ import java.util.ArrayList;
  */
 public class Professor extends Pessoa{
     String cargo;
-    
-    public Professor(String nome, String id, String email, int idade,String cargo) {
-        super(nome, id, email, idade);
-        this.cargo = cargo;
-    }
-    
-    ArrayList<Aluno> alunos = new ArrayList<Aluno>();
+    String diaAula;
+    Scanner input = new Scanner(System.in);
 
-    public ArrayList<Aluno> getAlunos() {
-        return alunos;
+    public Professor(String cargo, String diaAula, String nome, String id, String email, int idade) {
+        super(nome, id, email,idade);
+        this.cargo = cargo;
+        this.diaAula = diaAula;
+        
     }
     
     
+    
+    ArrayList<Cadeiras> cadeiras = new ArrayList<Cadeiras>();
+
+    public ArrayList<Cadeiras> getCadeira() {
+        return cadeiras;
+    }
+
+    
+    
+    public void cadastrarNotasAluno(Aluno aluno, Cadeiras cadeira){
+        if(aluno.cadeiras.isEmpty()){
+            System.out.println("Não é possível cadastrar nenhuma nota. Não há cadeiras neste aluno");
+        }
+        else{
+            System.out.println("Cadeiras cadastradas de " + aluno.nome);
+            for (int i = 0; i < aluno.cadeiras.size(); i++) {
+                System.out.println((i + 1) + "-" + cadeiras.get(i));
+                
+                
+            int posicaoCadeira =0;   
+            System.out.println("Insira a posição para adição de nota: ");
+            posicaoCadeira = input.nextInt();  
+            System.out.println("Adicionar nota na cadeira: "+cadeira.nomeCadeira);
+            int notaAluno =0;
+            notaAluno = input.nextInt();
+            aluno.notas.add(posicaoCadeira, notaAluno);
+                
+            }
+        
+        
+    }
+
+}
     
 }

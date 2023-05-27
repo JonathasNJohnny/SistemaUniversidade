@@ -10,13 +10,25 @@ package escola;
  */
 public class Cadeiras {
     
-    String nome;
+    String nomeCadeira;
     int cargaHorária;
+    String dia;
+    int data;
 
-    public Cadeiras(String nome, int cargaHorária) {
-        this.nome = nome;
+    public Cadeiras(String nome, int cargaHorária, String dia, int data) {
+        this.nomeCadeira = nome;
         this.cargaHorária = cargaHorária;
+        this.dia = dia;
+        this.data = data;
     }
+
+    @Override
+    public String toString() {
+        return "\nCadeira:" + nomeCadeira + "\nCarga horária:" + cargaHorária + "\ndia:" + dia + "\ndata:" + data ;
+    }
+    
+
+    
     
     
 }
