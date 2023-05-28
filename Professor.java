@@ -42,14 +42,14 @@ public class Professor extends Pessoa{
             for (int i = 0; i < aluno.cadeiras.size(); i++) {
                 System.out.println((i + 1) + "-" + cadeiras.get(i));
                 
-                
-            int posicaoCadeira =0;   
+                	
+            int posicaoCadeira = 0;   
             System.out.println("Insira a posição para adição de nota: ");
             posicaoCadeira = input.nextInt();  
             System.out.println("Adicionar nota na cadeira: "+cadeira.nomeCadeira);
             int notaAluno =0;
             notaAluno = input.nextInt();
-            aluno.notas.add(posicaoCadeira, notaAluno);
+            aluno.notas.add(new Notas(posicaoCadeira, notaAluno));
                 
             }
         

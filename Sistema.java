@@ -48,7 +48,7 @@ public class Sistema {
             System.out.println("Nenhuma cadeira adicionada");
         } else {
             for (int i = 0; i < cadeiras.size(); i++) {
-                System.out.println((i + 1) + "-" + cadeiras.get(i).toString());
+                System.out.println((i + 1) + ":" + cadeiras.get(i).toString());
             }
         }
     }

@@ -25,7 +25,7 @@ public class Main {
         Cadeiras algebraLinear = new Cadeiras("Algebra Linear",60,"sexta",12);
         Cadeiras fisica = new Cadeiras("Fisica",60,"segunda",12);
         
-        //Professor professor1 = new Professor("Marcos","12","teste",34,"Prof efetivo","Quarta");
+        Professor professor1 = new Professor("Algebra Linear","Quarta-Feira","Marcos","00001","marcos@aluno.UniDavi.com",34);
      
         
         sistema.cadastrarCadeirasSistema(calculo1);

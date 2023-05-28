@@ -24,7 +24,7 @@ public class Cadeiras {
 
     @Override
     public String toString() {
-        return "\nCadeira:" + nomeCadeira + "\nCarga horária:" + cargaHorária + "\ndia:" + dia + "\ndata:" + data ;
+        return "\nCadeira:" + nomeCadeira + "\nCarga horária:" + cargaHorária + "\ndia:" + dia + "\ndata:" + data + "\n";
     }
     
 
